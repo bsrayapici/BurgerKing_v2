@@ -1,42 +1,170 @@
-#root {
-  max-width: 1280px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  color: #555;
+  margin: 20px 0 15px;
+  font-size: 1.3em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 30px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.error {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #fcc;
 }
 
-.card {
-  padding: 2em;
+.info-message {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+form {
+  display: grid;
+  gap: 15px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #535bf2;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.search-section select,
+.search-section input,
+.search-section button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.burger-list-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+thead {
+  background: #f5f5f5;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.edit-btn {
+  background: #4caf50;
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.edit-btn:hover {
+  background: #45a049;
+}
+
+.delete-btn {
+  background: #f44336;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background: #da190b;
 }
